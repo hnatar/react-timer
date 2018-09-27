@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+$red		: #C66168;
+$red-light	: #D07D83;
+$orange		: #D1775C;
+$orange-light: #D98F79;
+$green		: #7EC16A;
+$text       : #FFFFFF;
+$green		: #7EC16A;
+$secondary	: #2E2C29;
+
+/* Simple reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	transition: all 0.5s;
+}
+
+/* Layout */
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-container > * {
+	margin-left: 1rem;
+}
+
+.half-container { // takes up roughly half the page
+	min-width: 40vw;
+	margin: 2vw;
+	padding: 1vw;
+	border: 0.1rem solid rgba($text, 0.1);
+}
+
+/* General */
+a, button {
+	color: $text;
+	background-color: rgba($green, 0.8);
+	transition: all 0.3s;
+	&:hover {
+		background-color: $green;
+		color: rgba($text, 0.9);
+	}
+}
+button {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+/* Colors */
+.muted {
+	opacity: 0.5;
+}
+.red {
+	background-color: $red !important;
+	&:hover {
+		background-color: $red-light !important;
+	}
+}
+.orange {
+	background-color: $orange !important;
+	&:hover {
+		background-color: $orange-light !important;
+	}
+}
+/* stuff */
+
+body {
+	font-size: 4vh;
+	line-height: 1.5;
+	font-family: "Lato";
+	background-color: $secondary;
+	font-weight: 400;
+	color: $text;
+}
+
+.time {
+	margin: auto;
+}
